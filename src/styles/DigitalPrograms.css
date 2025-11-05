@@ -1,0 +1,100 @@
+.digital-programs {
+  background: #f0f4f3;
+  padding: 80px 20px;
+}
+
+.digital-programs h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+
+.programs-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.program-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #e0e8e6;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.program-card.popular {
+  border: 2px solid #6b46c1;
+  box-shadow: 0 8px 24px rgba(107, 70, 193, 0.15);
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #6b46c1;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.program-card h3 {
+  font-size: 18px;
+  color: #6b46c1;
+  margin-bottom: 10px;
+}
+
+.program-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6b46c1;
+  margin-bottom: 5px;
+}
+
+.program-target {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.program-features {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.program-features li {
+  padding: 8px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .digital-programs {
+    padding: 60px 20px;
+  }
+
+  .digital-programs h2 {
+    font-size: 28px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+}

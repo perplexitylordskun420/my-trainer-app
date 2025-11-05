@@ -1,0 +1,86 @@
+.services {
+  background: white;
+  padding: 80px 20px;
+}
+
+.services-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #f8fffe;
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid #e0e8e6;
+  transition: all 0.3s ease;
+}
+
+.service-card.featured {
+  border: 2px solid #2d7a6e;
+  box-shadow: 0 8px 24px rgba(45, 122, 110, 0.15);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.service-badge {
+  display: inline-block;
+  background: #2d7a6e;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2d7a6e;
+  margin-bottom: 10px;
+}
+
+.price span {
+  font-size: 14px;
+  color: #999;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.benefits {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.benefits li {
+  padding: 8px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 60px 20px;
+  }
+
+  .services-content {
+    grid-template-columns: 1fr;
+  }
+}

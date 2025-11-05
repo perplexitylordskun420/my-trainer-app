@@ -1,0 +1,136 @@
+.corporate-wellness {
+  background: white;
+  padding: 80px 20px;
+}
+
+.corporate-wellness h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 60px;
+  font-size: 16px;
+}
+
+.packages-grid {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.package-card {
+  background: #f8fffe;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #e0e8e6;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.package-card.popular {
+  border: 2px solid #b8860b;
+  box-shadow: 0 8px 24px rgba(184, 134, 11, 0.15);
+}
+
+.recommended-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #b8860b;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.package-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.package-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b8860b;
+  margin-bottom: 5px;
+}
+
+.employees {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.package-features {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.package-features li {
+  padding: 8px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.benefits-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px;
+  border-top: 1px solid #e0e8e6;
+}
+
+.benefits-section h3 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.benefit-item {
+  text-align: center;
+}
+
+.benefit-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.benefit-item h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .corporate-wellness {
+    padding: 60px 20px;
+  }
+
+  .corporate-wellness h2 {
+    font-size: 28px;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+}
